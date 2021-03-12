@@ -9,8 +9,14 @@
     <link href="css/tooplate-style.css" rel="stylesheet">
 </head>
 <body bgcolor="white">
+	<div id="navbar">
+	  <a class="active" href="#Home">Home</a>
+	  <a href="#Skills">Skills</a>
+	  <a href="#Projects">Projects</a>
+		<a href="#Contact">Contact Me</a>
+	</div>
 
-	<div class="tm-container-fluid">
+	<div class="tm-container-fluid" id="Home">
 		<section class="tm-footer tm-flex-center tm-intro tm-bgcolor-1">
 <!-- 	<i class="fas fa-heart fa-3x"></i>  -->
 				<br>
@@ -25,11 +31,15 @@
 						<br>
 						<br>
 						<br>
-          I'm a freshman majoring in Computer Science at Arizona State University. I'm passionate about Software Engineering and enjoy solving coding problems and developing apps and software in my free time.<p></p>
+						<table>
+				  <tr>
+						<td><p> I'm a freshman majoring in Computer Science at Arizona State University. I'm passionate about Software Engineering and enjoy solving coding problems and developing apps and software in my free time.</p></td>
+            <td><img src="img/ASU.PNG"></td>
+				</table>
 		</section>
 
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
-			<div class="tm-about-header tm-flex-center">
+			<div class="tm-about-header tm-flex-center" id="Skills">
 			<!--	<i class="fas fa-users fa-2x"></i> -->
 				<h1><font size="20px" style="margin: 150px">Skills</font></h1>
 				<br>
@@ -89,48 +99,30 @@
 			                        </th></tr></tbody></table>
 		</section>
      <h1><font size="20px" style="margin: 150px">Projects</font></h1>
-		<div class="tm-gallery-section tm-mb-80">
+		<div class="tm-gallery-section tm-mb-80" id="Projects">
 			<ul class="filters-button-group tm-mb-40">
-				<li><a href="#" data-filter=".city">Front End</a></li>
-				<li><a href="#" data-filter=".nature">Back End</a></li>
-				<li><a href="#" data-filter=".portraits">Full Stack</a></li>
+				<li><a href="#" data-filter=".frontEnd">Front End</a></li>
+				<li><a href="#" data-filter=".backEnd">Back End</a></li>
+				<li><a href="#" data-filter=".fullStack">Full Stack</a></li>
 				<li><a href="#" class="active" data-filter="*">Show All</a></li>
 			</ul>
 			<div class="tm-gallery" style="position: relative; height: 240px;">
-				<div class="tm-gallery-item city portraits" style="position: absolute; left: 0px; top: 0px;">
-		            <a href="img/circuit.PNG" style="margin-left:150px">
+				<div class="tm-gallery-item frontEnd" style="position: absolute; left: 0px; top: 0px;">
+								<a href="img/Website.PNG" style="margin-left:150px">
+									<img src="img/Website.PNG" alt="Website" class="img-fluid" /><p>Personal Website</p>
+								</a>
+						</div>
+				<div class="tm-gallery-item frontEnd backEnd fullStack" style="position: absolute; left: 0px; top: 0px;">
+		            <a href="circuit.html" style="margin-left:150px">
 		            	<img src="img/circuit.PNG" alt="Circuit Interval Timer App" class="img-fluid" /><p>Circuit Interval Timer App</p>
 		            </a>
 		        </div>
 			</div>
 		</div>
 
-<!--		<section class="tm-contact tm-mb-50 tm-bgcolor-3 tm-border-rounded">
-<h1><font size="20px" style="margin: 150px" >Contact Me</font></h1>
-			<div class="tm-contact-info">
-				<address class="tm-mb-30">
-                 Arizona State University, Tempe, AZ 85281, United States
-				</address>
-				<div class="tm-text-white tm-mb-40">Tel: <a href="tel:0100200340" class="tm-link-white">------</a></div>
-				<div class="tm-flex">
-					<a href="https://facebook.com" class="tm-social-link"><i class="fab fa-facebook"></i></a>
-					<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter"></i></a>
-					<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram"></i></a>
-          <a href="https://linkedin.com/in/arjundadhwal.com class="tm-social-link"><i class="fab fa-linkedin"></i></a>
-				</div>
-			</div>
-			<div class="tm-contact-form-container">
-				<form id="contact-form" action="" method="POST" class="tm-contact-form">
-		          	<input type="text" name="name" placeholder="name" required="" />
-		          	<input type="email" name="email" placeholder="email" required="" />
-		          	<textarea rows="5" name="message" class="tm-mb-30" placeholder="message" required=""></textarea>
-		          	<button type="submit" class="tm-right tm-btn-submit">send</button>
-		        </form>
-			</div>
-		</section>
-	-->
+
 		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
-			<div class="tm-about-header tm-flex-center">
+			<div class="tm-about-header tm-flex-center" id="Contact">
 			<!--	<i class="fas fa-users fa-2x"></i> -->
 				<h1><font size="20px" style="margin-left: 150px">Contact Me</font></h1>
 				<br>
@@ -176,13 +168,31 @@
 			});
 
 		  	// Magnific Pop up
+				/*
 		  	$('.tm-gallery').magnificPopup({
 		  		delegate: 'a',
-			  	type: 'image',
+			  	type: "image",
 				  gallery: { enabled: true }
+
 			});
+			*/
 		});
 	</script>
+
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 
 </div></body></html>

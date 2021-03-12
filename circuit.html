@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Circuit Interval Timer App</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link href="css/magnific-popup.min.css" rel="stylesheet">
+    <link href="css/tooplate-style.css" rel="stylesheet">
+</head>
+<body bgcolor="white">
+	<div id="navbar">
+	  <a class="active" href="index.html">Home</a>
+	</div>
+
+	<div class="tm-container-fluid" id="Home">
+		<section class="tm-footer tm-flex-center tm-intro tm-bgcolor-1">
+<!-- 	<i class="fas fa-heart fa-3x"></i>  -->
+				<br>
+				<br>
+				<br>
+		</section>
+	<div class="tm-container-fluid">
+		<section class="tm-site-header tm-flex-center tm-mb-intro tm-bgcolor-1">
+<!-- 	<i class="fas fa-heart fa-3x"></i>  -->
+            <font size="30px"><strong>Circuit Interval Timer App</strong></font>
+						<br>
+						<br>
+						<br>
+						<br>
+						<table>
+				  <tr>
+						<td><p> Program I developed using JavaFX which helps in creating intervals for circuit training. The user can add exercises along with their names and also add rest intervals. It also makes use of timers.</p></td>
+            <td><img src="img/circuit.PNG"></td>
+				</table>
+        <div class="tm-flex">
+          <a href="https://github.com/ardad2" class="tm-social-link"><i class="fab fa-github"></i></a>
+        </div>
+		</section>
+
+		<section class="tm-about tm-mb-80 tm-p-50 tm-bgcolor-2 tm-border-rounded">
+			<div class="tm-about-header tm-flex-center" id="Skills">
+			<!--	<i class="fas fa-users fa-2x"></i> -->
+				<h1><font size="20px" style="margin: 150px">Utilized</font></h1>
+				<br>
+			</div>
+			<table style="margin-left: 150px">
+			                            <tbody><tr>
+			                                <th>
+			                                    <div class="language-badge">Java</div>
+																					<div class="language-badge">JavaFX++</div>
+			                            </th></tr><tr>
+
+		<footer class="tm-footer">
+
+		</footer>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(function(){
+		  	// Init the image gallery
+		  	var $gallery = $(".tm-gallery").isotope({
+		    	itemSelector: ".tm-gallery-item",
+		    	layoutMode: "fitRows"
+		  	});
+
+		  	// Layout Isotope after each image loads
+		  	$gallery.imagesLoaded().progress(function() {
+		    	$gallery.isotope("layout");
+		  	});
+
+		  	$(".filters-button-group").on("click", "a", function(e) {
+		  		e.preventDefault();
+			    var filterValue = $(this).attr("data-filter");
+			    $gallery.isotope({ filter: filterValue });
+			    $('.filters-button-group a').removeClass('active');
+			    $(this).addClass('active');
+			});
+
+		  	// Magnific Pop up
+				/*
+		  	$('.tm-gallery').magnificPopup({
+		  		delegate: 'a',
+			  	type: "image",
+				  gallery: { enabled: true }
+
+			});
+			*/
+		});
+	</script>
+
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</div></body></html>
