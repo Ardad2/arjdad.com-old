@@ -3,8 +3,9 @@ html { overflow-x: hidden; }
 body {
     margin: 0;
     padding: 0;
+       align-items:center
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 2em;
     overflow-x: hidden;
 }
@@ -30,6 +31,7 @@ a:hover { color: #30ADAD; }
     max-width: 100%;
 }
 .tm-container-fluid {
+       align-items:center
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-color: "black";
@@ -42,12 +44,14 @@ a:hover { color: #30ADAD; }
 .tm-site-header { height: 600px; }
 
 .tm-flex-center {
+       align-items:center
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .tm-contact {
+       align-items:center
     display: flex;
 }
 
