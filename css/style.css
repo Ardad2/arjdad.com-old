@@ -152,6 +152,7 @@ address { font-style: normal; }
 
 .tm-gallery-item {
     border-radius: 12px;
+    border:white solid;
     margin: 10px;
     overflow: hidden;
 }
