@@ -3,7 +3,7 @@ html { overflow-x: hidden; }
 body {
     margin: 0;
     padding: 0;
-       align-items:center
+       align-items:center;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     line-height: 2em;
@@ -31,7 +31,7 @@ a:hover { color: #30ADAD; }
     max-width: 100%;
 }
 .tm-container-fluid {
-       align-items:center
+       align-items:center;
   text-align: left;
   font-family: 'Inter', sans-serif;
   font-color: "black";
@@ -51,7 +51,7 @@ a:hover { color: #30ADAD; }
 }
 
 .tm-contact {
-       align-items:center
+       align-items:center;
     display: flex;
 }
 
