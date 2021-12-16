@@ -3,7 +3,7 @@ html { overflow-x: hidden; }
 body {
     margin: 0;
     padding: 0;
-    background-image: url("winter.png");
+    background-image: url("http://pajasevi.github.io/CSSnowflakes/img/background.png");
     background-size: 100%;
        align-items:center;
     font-family: 'Inter', sans-serif;
