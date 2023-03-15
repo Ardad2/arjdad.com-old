@@ -1,7 +1,7 @@
 {
   "name": "Arjun Dadhwal - Software Developer",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://ardad2.github.io/arjdad.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
@@ -19,6 +19,8 @@
     "react-scripts": "^1.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
