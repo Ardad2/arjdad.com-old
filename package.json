@@ -1,6 +1,7 @@
 {
   "name": "Arjun Dadhwal - Software Developer",
   "version": "0.1.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.9.0",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^5.0.0",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
