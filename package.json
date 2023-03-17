@@ -1,4 +1,5 @@
 {
+  "homepage":"http://ardad2.github.io/arjdad.com",
   "name": "Arjun Dadhwal - Software Developer",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^1.0.1",
     "babel-plugin-macros": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^17.0.2",
@@ -19,6 +21,8 @@
   },
   "scripts": {
     "start": "craco start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
