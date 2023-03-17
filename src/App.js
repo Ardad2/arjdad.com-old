@@ -12,8 +12,8 @@ export default function App() {
   return (
     <main className="text-gray-400 bg-white-100 body-font " >
       <Routes>
-        <Route exact path="/" element ={<Home/>} />
-        <Route exact path="/Blog" element = {<Blog/>}  />
+        <Route exact path="/arjdad.com" element ={<Home/>} />
+        <Route exact path="/arjdad.com/Blog" element = {<Blog/>}  />
       </Routes>
     </main>
   );
