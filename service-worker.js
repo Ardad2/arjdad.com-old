@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/arjdad.com/precache-manifest.91f16aafb92568ee77d5fbae5fa01d4d.js"
+  "/arjdad.com/precache-manifest.b379ac34751b8598f7eafadd3157a898.js"
 );
 
 workbox.clientsClaim();
