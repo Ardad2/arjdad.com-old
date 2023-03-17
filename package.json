@@ -1,5 +1,5 @@
 {
-  "homepage":"http://ardad2.github.io/arjdad.com",
+  "homepage": "http://ardad2.github.io/arjdad.com",
   "name": "Arjun Dadhwal - Software Developer",
   "version": "0.1.0",
   "private": true,
@@ -17,12 +17,12 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^2.0.0"
   },
   "scripts": {
     "start": "craco start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
@@ -37,5 +37,11 @@
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
