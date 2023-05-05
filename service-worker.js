@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/arjdad.com/precache-manifest.864c3373cd6e835ed1494ae42c3740a6.js"
+  "/AlternateWebsite.github.io/precache-manifest.f103faf6c41aea6c0d0edb9d9b2e7277.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/arjdad.com/index.html", {
+workbox.routing.registerNavigationRoute("/AlternateWebsite.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
